@@ -12,3 +12,7 @@ agent = create_agent(
     system_prompt = "You are a helpful assistant that provides weather information."
 )
 
+agent.invoke(
+      {"messages": [{"role": "user", "content": "what is the weather in sf"}]}
+)
+
