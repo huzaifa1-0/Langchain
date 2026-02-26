@@ -8,5 +8,7 @@ def get_weather(city: str) -> str:
 
 agent = create_agent(
     model = "claude-2.3-sonnet-2024-06-06",
-
+    tools = [get_weather],
+    system_prompt = "You are a helpful assistant that provides weather information."
 )
+
